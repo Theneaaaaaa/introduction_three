@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QID-dF-hlQ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,51 +10,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In-->
+        <!--Data-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Log In" id="BYZ-38-t0r" customClass="ViewController" customModule="weather_reporter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Data" id="BYZ-38-t0r" customClass="ViewController" customModule="weather_reporter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cold Temperature Limit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mZ-M8-tj4">
-                                <rect key="frame" x="53" y="227" width="268" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mZ-M8-tj4">
+                                <rect key="frame" x="73" y="208" width="268" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Warm Temperature Limit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfq-to-s4o">
-                                <rect key="frame" x="53" y="288" width="268" height="30"/>
+                                <rect key="frame" x="73" y="309" width="268" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olj-jg-AM4">
-                                <rect key="frame" x="53" y="378" width="102" height="26"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cold Temperature Limit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Web-G6-dZr">
+                                <rect key="frame" x="73" y="259" width="268" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Forget User Name?"/>
-                                <connections>
-                                    <action selector="forgotUserNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzr-Yf-waI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuS-DY-0gj">
-                                <rect key="frame" x="227" y="378" width="94" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Forget Password?"/>
-                                <connections>
-                                    <action selector="forgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQ3-oc-53Z"/>
-                                </connections>
-                            </button>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVz-UQ-EYX">
-                                <rect key="frame" x="160" y="337" width="54" height="37"/>
+                                <rect key="frame" x="180" y="367" width="54" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <segue destination="ef2-eZ-7dH" kind="show" id="81N-Ls-DnC"/>
                                 </connections>
@@ -65,8 +54,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Your Weather Reporter" largeTitleDisplayMode="always" id="8L0-e5-dee"/>
                     <connections>
-                        <outlet property="forgotPassword" destination="yuS-DY-0gj" id="iiL-c1-iLg"/>
-                        <outlet property="fotgotUserName" destination="Olj-jg-AM4" id="leL-Lu-elN"/>
                         <outlet property="userName" destination="5mZ-M8-tj4" id="Tuf-tl-8QS"/>
                         <outlet property="usernameTextField" destination="5mZ-M8-tj4" id="bke-rz-Spv"/>
                         <segue destination="ef2-eZ-7dH" kind="show" identifier="ForgottenUsernameOrPassword" id="1Hc-5n-4dh"/>
@@ -74,15 +61,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="134"/>
+            <point key="canvasLocation" x="981.60000000000002" y="133.5832083958021"/>
         </scene>
         <!--Title-->
         <scene sceneID="bB0-SO-1YL">
             <objects>
                 <viewController id="ef2-eZ-7dH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iu8-pP-cDz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xeq-XS-ZW2">
+                                <rect key="frame" x="0.0" y="140" width="414" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sis-JT-frR"/>
                     </view>
@@ -90,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY2-kk-2AW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1802.8985507246377" y="133.25892857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3ii-Hm-Yb2">
@@ -98,7 +91,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QID-dF-hlQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eZe-E8-rPt">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

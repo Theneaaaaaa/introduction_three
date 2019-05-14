@@ -1,21 +1,35 @@
 //
 //  ViewController.swift
-//  lab_login
+//  weather_reporter
 //
-//  Created by Thenea on 4/23/19.
+//  Created by Thenea on 5/12/19.
 //  Copyright © 2019 Thenea. All rights reserved.
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var fotgotUserName: UIButton!
     @IBOutlet weak var forgotPassword: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
     @IBAction func usernameTextField(_ sender: Any) {
     }
@@ -26,16 +40,9 @@ class ViewController: UIViewController {
     @IBAction func forgotUserNameButton(_ sender: UIButton) {
         performSegue(withIdentifier: "ForgottenUsernameOrPassword", sender: fotgotUserName)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let sender = sender as? UIButton else {return}
-        
-        if sender == forgotPassword {
-            segue.destination.navigationItem.title = "Forgot Password"
-        } else if sender == fotgotUserName {
-            segue.destination.navigationItem.title = "Forgot User Name"
-        } else {
-        segue.destination.navigationItem.title = usernameTextField.text
-        }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 }
-
