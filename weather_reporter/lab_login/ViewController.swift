@@ -11,8 +11,6 @@ import CoreLocation
 import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    @IBOutlet weak var fotgotUserName: UIButton!
-    @IBOutlet weak var forgotPassword: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     let locationManager = CLLocationManager()
     
@@ -34,12 +32,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func usernameTextField(_ sender: Any) {
     }
     @IBOutlet weak var userName: UITextField!
-    @IBAction func forgotPasswordButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "ForgottenUsernameOrPassword", sender: forgotPassword)
-    }
-    @IBAction func forgotUserNameButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "ForgottenUsernameOrPassword", sender: fotgotUserName)
-    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
