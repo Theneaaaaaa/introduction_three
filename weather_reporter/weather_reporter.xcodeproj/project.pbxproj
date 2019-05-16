@@ -14,6 +14,7 @@
 		250EA117226F5455004274E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250EA115226F5455004274E6 /* LaunchScreen.storyboard */; };
 		250EA122226F5455004274E6 /* lab_loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250EA121226F5455004274E6 /* lab_loginTests.swift */; };
 		250EA12D226F5455004274E6 /* lab_loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250EA12C226F5455004274E6 /* lab_loginUITests.swift */; };
+		2538CC16228DD93800E9135D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2538CC15228DD93800E9135D /* MapViewController.swift */; };
 		25A7D0502289AA7B0047B2AB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A7D04F2289AA7B0047B2AB /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		250EA128226F5455004274E6 /* weather_reporterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weather_reporterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		250EA12C226F5455004274E6 /* lab_loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab_loginUITests.swift; sourceTree = "<group>"; };
 		250EA12E226F5455004274E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2538CC15228DD93800E9135D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		25A7D04F2289AA7B0047B2AB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			children = (
 				250EA10C226F5453004274E6 /* AppDelegate.swift */,
 				250EA10E226F5453004274E6 /* ViewController.swift */,
+				2538CC15228DD93800E9135D /* MapViewController.swift */,
 				250EA110226F5453004274E6 /* Main.storyboard */,
 				250EA113226F5455004274E6 /* Assets.xcassets */,
 				250EA115226F5455004274E6 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				250EA10F226F5453004274E6 /* ViewController.swift in Sources */,
+				2538CC16228DD93800E9135D /* MapViewController.swift in Sources */,
 				250EA10D226F5453004274E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

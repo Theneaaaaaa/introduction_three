@@ -61,7 +61,7 @@
                     <navigationItem key="navigationItem" title="Your Weather Reporter" largeTitleDisplayMode="always" id="8L0-e5-dee"/>
                     <connections>
                         <outlet property="userName" destination="5mZ-M8-tj4" id="Tuf-tl-8QS"/>
-                        <outlet property="usernameTextField" destination="5mZ-M8-tj4" id="bke-rz-Spv"/>
+                        <outlet property="usernameTextField" destination="5mZ-M8-tj4" id="75Z-Wu-G4w"/>
                         <segue destination="ef2-eZ-7dH" kind="show" identifier="ForgottenUsernameOrPassword" id="1Hc-5n-4dh"/>
                     </connections>
                 </viewController>
@@ -72,18 +72,30 @@
         <!--Title-->
         <scene sceneID="bB0-SO-1YL">
             <objects>
-                <viewController id="ef2-eZ-7dH" sceneMemberID="viewController">
+                <viewController id="ef2-eZ-7dH" customClass="MapViewController" customModule="weather_reporter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iu8-pP-cDz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j58-AC-p6a">
-                                <rect key="frame" x="0.0" y="140" width="375" height="330"/>
+                                <rect key="frame" x="0.0" y="139.99999999999997" width="375" height="370.66666666666669"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xeq-XS-ZW2">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
                                     </mapView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjA-6t-Jov">
+                                        <rect key="frame" x="0.0" y="330" width="375" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEH-hq-oDu">
+                                        <rect key="frame" x="0.0" y="350.33333333333331" width="375" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -91,6 +103,11 @@
                         <viewLayoutGuide key="safeArea" id="sis-JT-frR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="5n1-tA-y0J"/>
+                    <connections>
+                        <outlet property="latitude" destination="BEH-hq-oDu" id="Yeu-9U-fIS"/>
+                        <outlet property="longiitude" destination="UjA-6t-Jov" id="lcO-Dp-xKm"/>
+                        <outlet property="map" destination="Xeq-XS-ZW2" id="gOB-Zh-LWg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY2-kk-2AW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

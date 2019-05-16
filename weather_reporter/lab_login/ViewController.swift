@@ -11,7 +11,9 @@ import CoreLocation
 import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
+    
     @IBOutlet weak var usernameTextField: UITextField!
+    
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
