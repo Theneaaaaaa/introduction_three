@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QID-dF-hlQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QID-dF-hlQ">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,7 +44,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
-                                            <segue destination="ef2-eZ-7dH" kind="show" id="81N-Ls-DnC"/>
+                                            <segue destination="ef2-eZ-7dH" kind="show" id="84q-y8-TR7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -60,9 +60,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Your Weather Reporter" largeTitleDisplayMode="always" id="8L0-e5-dee"/>
                     <connections>
-                        <outlet property="userName" destination="5mZ-M8-tj4" id="Tuf-tl-8QS"/>
-                        <outlet property="usernameTextField" destination="5mZ-M8-tj4" id="U3C-Cy-7og"/>
-                        <segue destination="ef2-eZ-7dH" kind="show" identifier="ForgottenUsernameOrPassword" id="1Hc-5n-4dh"/>
+                        <outlet property="usernameTextField" destination="5mZ-M8-tj4" id="nMd-Nu-T7w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,7 +100,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sis-JT-frR"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="5n1-tA-y0J"/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="5n1-tA-y0J"/>
                     <connections>
                         <outlet property="latitude" destination="BEH-hq-oDu" id="Yeu-9U-fIS"/>
                         <outlet property="longiitude" destination="UjA-6t-Jov" id="lcO-Dp-xKm"/>
@@ -132,7 +130,4 @@
             <point key="canvasLocation" x="132" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="1Hc-5n-4dh"/>
-    </inferredMetricsTieBreakers>
 </document>

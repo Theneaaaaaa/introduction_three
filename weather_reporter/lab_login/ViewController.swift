@@ -24,9 +24,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         // Ask for Authorisation from the User.
     }
-    @IBAction func usernameTextField(_ sender: Any) {
-    }
-    @IBOutlet weak var userName: UITextField!
-
-    }
+}
 
