@@ -11,13 +11,11 @@ import CoreLocation
 import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    
     @IBOutlet weak var usernameTextField: UITextField!
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         
-    }
     
-    let locationManager = CLLocationManager()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segue.destination.navigationItem.title = usernameTextField.text
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
